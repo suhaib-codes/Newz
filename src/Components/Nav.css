@@ -1,0 +1,58 @@
+/* Base styles for the navbar */
+/* Base styles for the navbar */
+.navbar {
+  background-color: #f8f9fa; /* Adjust the color to match your theme */
+  padding: 0.5rem 1rem;
+}
+
+/* Navbar brand/logo */
+.navbar-brand .badge {
+  background-color: #ffffff;
+  color: #343a40;
+  font-size: 1.25rem;
+}
+
+/* Navbar toggler icon */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+/* Navbar links */
+.nav-link {
+  color: #343a40;
+  cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #faf9f8;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Dark background for mobile nav */
+  }
+  
+
+  .nav-link,
+  .navbar-brand .badge {
+    color: #f8f9fa; /* Light text color for better contrast */
+  }
+
+  .dropdown-menu {
+    background-color: #343a40;
+  }
+
+  .dropdown-item {
+    color: #f8f9fa;
+  }
+}
+
+/* Additional media query for smaller screens */
+@media (max-width: 575.98px) {
+  .navbar-nav {
+    flex-direction: column; /* Stack the nav items vertically */
+  }
+}
